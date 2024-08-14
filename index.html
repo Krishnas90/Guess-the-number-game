@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mozilla Firebox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Number Guessing Game</h2>
+  <p>We have selected a random number between 1 and 100. 
+    See if you can guess it in 10 turns or fewer. We'll tell 
+    you if your guess was too high or too low.</p>
+  <label for="guess_Field">Enter a guess: </label>
+  <input type="number" min="1" max="100" required name="guess_Field" id="guess_Field">
+  <button type="submit" class="guess_Submit">Submit Guess</button>
+  <div class="showResults">
+    <p class="guesses"></p>
+    <p class="result"></p>
+    <p class="lowOrHigh"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
